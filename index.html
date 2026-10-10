@@ -3,6 +3,16 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
+    <script>
+  // Runs before anything is drawn, so the prompt appears first.
+  if (!localStorage.getItem("name")) {
+    let name = null;
+    while (!name) {
+      name = prompt("Please enter your name.");
+    }
+    localStorage.setItem("name", name);
+  }
+</script>
     <title>My test page</title>
     <link href="styles/style.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
