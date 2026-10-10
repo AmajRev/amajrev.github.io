@@ -94,6 +94,8 @@ figcaption {
   font-weight: bold;
   color: #333333;
   text-align: center;
+  max-width: 350px;
+  margin: 0 auto;
 }
 
 .tooltip-container {
